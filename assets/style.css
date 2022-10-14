@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --navy: #06283d;
+  --blue: #1363df;
+  --light-blue: #47b5ff;
+  --sky-blue: #dff6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--navy);
+  transition: 0.5s;
+}
+a:hover {
+  color: var(--blue);
+  /* text-shadow: 0px 4px 3px var(--sky-blue), 0px 8px 13px var(--sky-blue), 0px 18px 23px var(--sky-blue); */
+  transition: 0.5s;
+}
+
+header {
+  background: rgb(71, 181, 255);
+  background: linear-gradient(326deg, rgba(71, 181, 255, 1) 0%, rgba(223, 246, 255, 1) 46%);
+  padding: 4em 1.5em 0em 1.5em;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 1.5em;
+}
+
+header img {
+  width: 50%;
+  max-height: 720px;
+  object-fit: cover;
+  object-position: center;
+}
+
+main {
+  background-color: var(--sky-blue);
+  padding: 1.5em;
+  display: flex;
+  overflow: auto;
+}
+
+.content {
+  width: 75%;
+  padding: 0em 15em 2em 10em;
+  box-sizing: border-box;
+}
+
+article h2,
+article h3,
+article h4 {
+  color: var(--navy);
+  margin-bottom: 0.2em;
+}
+
+article h2 {
+  font-size: 2em;
+}
+
+article h4 {
+  font-style: italic;
+  font-weight: 300;
+}
+
+article {
+  margin-bottom: 2em;
+}
+
+article#experience ul {
+  margin-bottom: 1em;
+  margin-left: 1.2em;
+}
+
+article p.year {
+  display: block;
+  background-color: var(--navy);
+  width: fit-content;
+  padding: 0.5em 2em;
+  color: var(--sky-blue);
+  margin: auto;
+}
+
+article#achievment p {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+aside {
+  width: 25%;
+  background-color: var(--navy);
+  padding: 2em;
+  box-sizing: border-box;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+aside img {
+  width: 100%;
+  margin: auto;
+  border-radius: 6px;
+  margin-bottom: 1em;
+}
+
+aside h2 {
+  color: var(--light-blue);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+aside ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+aside a {
+  color: var(--sky-blue);
+}
+
+aside a:hover {
+  color: var(--light-blue);
+}
+
+footer {
+  background-color: var(--light-blue);
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.nav-content {
+  padding: 4em;
+  padding-top: 10em;
+}
+
+.nav-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.1em;
+}
+
+.nav-content p {
+  margin-bottom: 1em;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-family: "Monoton";
+}
+
+.logo a {
+  color: var(--blue);
+  transition: 0.5s;
+}
+
+.logo a:hover {
+  color: var(--navy);
+  transition: 0.5s;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.bg-sky-blue {
+  background-color: rgba(223, 246, 255, 0.8);
+}
+
+.shadow-white {
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  transition: 0.5s;
+}
+
+.button {
+  display: block;
+  background-color: var(--navy);
+  width: fit-content;
+  padding: 0.5em;
+  color: #dff6ff;
+}
+
+.button:hover {
+  background-color: var(--light-blue);
+  color: var(--navy);
+}
+
+.gradient {
+  background: rgb(71, 181, 255);
+  background: linear-gradient(0deg, rgba(71, 181, 255, 1) 0%, rgba(223, 246, 255, 1) 46%);
+  height: 200px;
+}
+@media only screen and (max-width: 1050px) {
+  .nav-content {
+    padding: 2em;
+  }
+
+  main {
+    display: block;
+  }
+
+  .content {
+    width: 100%;
+    padding: 2em;
+  }
+
+  aside {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  nav .logo {
+    margin-bottom: 0.5em;
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    margin-right: 0;
+  }
+
+  header {
+    padding-top: 6em;
+    display: block;
+  }
+
+  header img {
+    width: 100%;
+  }
+}
